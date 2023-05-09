@@ -56,3 +56,23 @@ const getCertifications = async () => {
 
 getCertifications();
 
+var handler = {
+    // these methods must be named init and clean
+
+    init: function (options) {
+        getCertifications().then(function () {
+            for (i = 0; i < certifications.length; i++) {
+                let li = document.createElement("li");
+                li.classList.add("certification");
+                li.innerHTML = '<img class="certification" src="https://irp.cdn-website.com/553b2781/dms3rep/multi/award.svg" /><span class="certification">' + certifications[i] + '</span>';
+                certList.appendChild(li);
+            }
+        });
+    },
+
+    clean: function (options) {
+        options.container.innerHTML = '';
+    }
+}
+
+dmAPI.registerExternalWidget('certs', handler)
