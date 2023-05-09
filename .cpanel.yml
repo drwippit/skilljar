@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/adrizegn/public_html/
+    - /bin/cp app.js $DEPLOYPATH
