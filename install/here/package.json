@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "node-fetch": "^3.3.1",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "type":"module"
   }
 }
