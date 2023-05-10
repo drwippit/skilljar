@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+import fetch from './index.js';
 const apiUrl = "https://api.skilljar.com/v1";
 const authHeader = "Basic c2stbGl2ZS04NTQ4MzIyNGY0MTUyMTZhMmQ2MDA5NmU3ZWUxYjJiZjExYmZjNmI4Og==";
 const Certifications = [];
